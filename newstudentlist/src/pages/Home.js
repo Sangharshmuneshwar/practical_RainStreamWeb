@@ -52,12 +52,12 @@ function Home() {
         <table className='styled-table'>
             <thead>
                 <tr>
-                    <th style={{textAlign:"center"}}>No</th>
-                    <th style={{textAlign:"center"}}>name</th>
-                    <th style={{textAlign:"center"}}>email</th>
-                    <th style={{textAlign:"center"}}>mobileNo</th>
-                    <th style={{textAlign:"center"}}>gender</th>
-                    <th style={{textAlign:"center"}}>hobbies</th>
+                    <th style={{textAlign:"center"}}>Sr No</th>
+                    <th style={{textAlign:"center"}}>Name</th>
+                    <th style={{textAlign:"center"}}>Email</th>
+                    <th style={{textAlign:"center"}}>Mobile Number</th>
+                    <th style={{textAlign:"center"}}>Gender</th>
+                    <th style={{textAlign:"center"}}>Hobbies</th>
                     <th style={{textAlign:"center"}}>Action</th>
 
                 </tr>

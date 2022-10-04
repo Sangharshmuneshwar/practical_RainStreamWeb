@@ -80,19 +80,26 @@ function AddEdit() {
   return (
     <div style={{marginTop:"100px"}}>
         <form style={{margin:"auto", padding: "15px", maxWidth:"400px", alignContent:"center"}} onSubmit={handleSubmit} >
-     <label htmlFor='name'>name</label>
-     <input type="text" id = "name" name='name' placeholder='enter name...' onChange={ handleInput} value = {name} />
+     <label htmlFor='name'>Name</label>
+     <input type="text" id = "name" name='name' placeholder='enter name...' onChange={ handleInput} value = {name}  />
 
-     <label htmlFor='email'>email</label>
+     <label htmlFor='email'>Email</label>
      <input type="email" id = "email" name='email' placeholder='enter email...' onChange={ handleInput} value = {email} />
 
-     <label htmlFor='mobileNo'>mobileNo</label>
-     <input type="number" id = "mobileNo" name='mobileNo' placeholder='enter mobileNo...' onChange={ handleInput} value = {mobileNo} />
+     <label htmlFor='mobileNo'>Mobile Number</label>
+     <input type="number" id = "mobileNo" name='mobileNo' placeholder='enter Mobile Number...' onChange={ handleInput} value = {mobileNo} />
 
-     <label htmlFor='gender'>gender</label>
-     <input type="text" id = "gender" name='gender' placeholder='enter gender...' onChange={ handleInput} value = {gender} />
+     {/* <label htmlFor='gender'>gender</label>
+     <input type="text" id = "gender" name='gender' placeholder='enter gender...' onChange={ handleInput} value = {gender} /> */}
 
-     <label htmlFor='hobbies'>hobbies</label>
+<label htmlFor='gender'>Gender</label>
+<select id="gender" name='gender' onChange={handleInput} value={gender}>
+                  
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+               </select>
+
+     <label htmlFor='hobbies'>Hobbies</label>
      <input type="text" id = "hobbies" name='hobbies' placeholder='enter hobbies...' onChange={ handleInput} value = {hobbies} />
 
      <input type="submit" value = {id? "update": "Add"}/>

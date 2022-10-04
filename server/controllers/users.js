@@ -30,7 +30,7 @@ export const updateUser =(req,res) =>{
 
     user.name = req.body.name;
     user.email = req.body.email;
-    user.MobileNo = req.body.MobileNo;
+    user.mobileNo = req.body.mobileNo;
     user.gender = req.body.gender;
     user.hobbies = req.body.hobbies;
 
